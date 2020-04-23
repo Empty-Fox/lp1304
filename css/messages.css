@@ -1,0 +1,139 @@
+.messages-wrapper {
+    position: relative;
+    height: 70vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.messages-logo {
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: -200px;
+}
+.messages-wrapper::-webkit-scrollbar { 
+    display: none;
+}
+
+.messages {
+    position: relative;
+    margin: 50vh auto 0;    
+    width: 50%;
+    padding-left: 3rem;
+}
+.messages li {
+    margin-bottom: 1em;
+    animation: animationFrames2 ease 0.5s;
+    animation-iteration-count: 1;
+	transform-origin: 0% 0%;
+	animation-fill-mode: forwards;
+}
+.messages li span {
+    display: inline-block;
+    padding: 0.75em 1em;
+    border-radius: 3px;
+    background-color: #ffffff;
+    color: #000000;
+    animation: animationFrames ease 0.5s;
+    animation-iteration-count: 1;
+	transform-origin: 0% 0%;
+    animation-fill-mode: forwards;
+    border: 2px solid #008000;
+}
+.messages li.has-avatar {
+    position: relative;
+    border-radius: 0 3px 3px 3px;
+    margin-top: 2em;
+}
+.messages li.has-avatar:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -0.8em;
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 1em 1em 0;
+    border-color: transparent #008000 transparent transparent;
+}
+.messages li.has-avatar .avatar {
+    position: absolute;
+    top: -1.5em;
+    left: -5.2em;
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.messages.message-has-stick li > span {
+    position: relative;
+    padding-right: 2em;
+    overflow: hidden;
+}
+.messages.message-has-stick li > span:before,
+.messages.message-has-stick li > span:after {
+    font-family: 'FontAwesome';
+    content: '\f00c';
+    position: absolute;
+    bottom: 3px;
+    font-size: 15px;
+    line-height: 1;
+    color: #cccccc;
+    animation: animationColor 0.3s linear both 1s;
+}
+.messages.message-has-stick li > span:before {
+    right: 10px;
+}
+.messages.message-has-stick li > span:after {
+    right: 4px;
+}
+
+.registration-form-builder-wrapper {
+    min-height: 5.5em;
+}
+
+
+
+
+
+
+@keyframes animationFrames {
+	0% {
+		transform: scaleX(0.00);
+	}
+	100% {
+		transform: scaleX(1.00);
+	}
+}
+@keyframes animationFrames2 {
+	0% {
+		transform: scaleY(0.00);
+	}
+	100% {
+		transform: scaleY(1.00);
+	}
+}
+
+@keyframes animationColor {
+	0% {
+		color: #cccccc;
+	}
+	100% {
+		color: #1675ac;
+	}
+}
+
+@media (min-width: 768px) {
+    .messages li.has-avatar {
+        margin-top: 2.5em;
+    }
+    .messages li.has-avatar .avatar {
+        top: -1.8em;
+        left: -6.4em;
+        width: 5em;
+        height: 5em;
+    }
+    
+}
+

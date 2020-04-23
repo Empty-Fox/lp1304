@@ -1,0 +1,98 @@
+html {
+    -webkit-text-size-adjust: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0f0c11;
+    background-attachment: scroll;
+    background-size: auto;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1.4;
+    color: #ffffff;
+}
+body:before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    height: 100vh;
+}
+* {
+    box-sizing: border-box;
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+a:hover {
+    text-decoration: underline;
+    color: inherit;
+}
+input, button, select {
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+}
+img {
+    max-width: 100%;
+}
+header h1 {
+    text-shadow: 3px 5px 6px #008000;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+    border: 0;
+}
+
+
+
+p, ul, li, ol, h1, h2 {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-weight: normal;
+}
+.container {
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) and (min-height: 600px) {
+    body {
+        font-size: 18px;
+    }
+    .container {
+        max-width: 90vw;
+    }
+}
+@media (min-width: 992px) {
+    body {
+        font-size: 15px;
+    }
+}
+@media (min-width: 1300px) {
+    .container {
+        max-width: 80vw;
+    }
+}
+@media (min-width: 1800px) {
+    body {
+        font-size: 18px;
+    }
+}
+

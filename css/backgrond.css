@@ -1,0 +1,446 @@
+.chat-box {
+    width: 100%; 
+       height:100vh;
+}
+.slideshow {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -5;
+}
+
+.slideshow-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: no-repeat 50% 50%;
+    background-size: cover;
+    -webkit-animation-name: kenburns;
+    animation-name: kenburns;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-duration: 16s;
+    animation-duration: 16s;
+    opacity: 1;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.slideshow-image:nth-child(1) {   
+    animation-name: kenburns-1;
+    z-index: 7;
+}
+
+.slideshow-image:nth-child(2) {   
+    animation-name: kenburns-2;
+    z-index: 6;
+}
+
+.slideshow-image:nth-child(3) {   
+    animation-name: kenburns-3;
+    z-index: 5;
+}
+
+
+
+.slideshow-image:nth-child(4) {    
+    animation-name: kenburns-4;
+    z-index: 4;
+}
+
+.slideshow-image:nth-child(5) {  
+    animation-name: kenburns-5;
+    z-index: 3;
+}
+.slideshow-image:nth-child(6) {   
+    animation-name: kenburns-6;
+    z-index: 2;
+}
+
+.slideshow-image:nth-child(7) {   
+    animation-name: kenburns-7;
+    z-index: 1;
+}
+.slideshow-image:nth-child(8) {  
+    animation-name: kenburns-8;
+    z-index: 0;
+}
+
+
+@keyframes kenburns-1 {
+    0% {
+        opacity: 1;
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    1.5625% {
+
+        opacity: 1;
+
+    }
+
+    13.4375% {
+
+        opacity: 1;
+
+    }
+
+    16.5625% {
+
+        opacity: 0;
+
+        -webkit-transform: scale(1);
+
+        transform: scale(1);
+
+    }
+
+    100% {
+
+        opacity: 0;
+
+        -webkit-transform: scale(1.2);
+
+        transform: scale(1.2);
+
+    }
+
+    98.4375% {
+
+        opacity: 0;
+
+        -webkit-transform: scale(1.21176);
+
+        transform: scale(1.21176);
+
+    }
+
+    100% {
+
+        opacity: 1;
+
+    }
+
+}
+
+
+
+@keyframes kenburns-2 {
+    13.4375% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+
+    29.5625% {
+
+        opacity: 0;
+
+    }
+  
+
+    51.5625% {
+
+        transform: scale(1);
+
+    }
+
+    100% {
+
+        opacity: 0;
+
+        -webkit-transform: scale(1.2);
+
+        transform: scale(1.2);
+
+    }
+
+}
+
+
+@keyframes kenburns-3 {
+    28.4375% {
+
+        opacity: 1;
+
+        -webkit-transform: scale(1.2);
+
+        transform: scale(1.2);
+
+    }
+
+    34.5625% {
+
+         opacity: 0;
+    }
+
+
+    76.5625% {
+        transform: scale(1);
+    }
+
+    100% {
+
+        opacity: 0;
+
+        -webkit-transform: scale(1.2);
+
+        transform: scale(1.2);
+
+    }
+
+}
+
+
+
+
+@keyframes kenburns-4 {
+    33.4375% {
+
+        opacity: 1;
+
+        -webkit-transform: scale(1.2);
+
+        transform: scale(1.2);
+
+    }
+
+    44.5625% {
+
+        opacity: 0;
+
+    }
+
+  
+
+    100% {
+        
+        -webkit-transform: scale(1);
+
+        transform: scale(1);
+
+    }
+
+}
+
+
+@keyframes kenburns-5 {
+    43.4375% {
+
+        opacity: 1;
+
+        -webkit-transform: scale(1.2);
+
+        transform: scale(1.2);
+
+    }
+
+    54.5625% {
+
+        opacity: 0;
+
+    }
+
+
+    100% {
+
+        transform: scale(1);
+
+    }
+
+}
+
+
+@keyframes kenburns-6 {
+    53.4375% {
+
+        opacity: 1;
+        transform: scale(1.2);
+
+    }
+
+    56.5625% {
+
+        opacity: 1;
+
+    }
+
+    64.4375% {
+
+        opacity: 0;
+
+    }
+
+    100% {
+        transform: scale(1);
+
+    }
+
+}
+
+
+@keyframes kenburns-7 {
+    63.4375% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+
+    66.5625% {
+
+        opacity: 1;
+
+    }
+
+    74.4375% {
+
+        opacity: 0;
+
+    }
+
+    100% {
+       
+        transform: scale(1);
+
+    }
+
+}
+
+
+@keyframes kenburns-8 {
+    73.4375% {
+
+        opacity: 1;
+        transform: scale(1.2);
+
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(1);
+    }
+
+}
+
+@media only screen and (max-width:1024px){
+    .messages {
+        position: relative;
+        margin: 30vh auto 0;
+        width: 70%;
+    }
+}
+@media only screen and (max-width: 823px) {
+    .messages {
+        position: relative;
+        margin: 60vh auto 0;
+}
+footer {
+      height: auto;
+}
+footer span:last-of-type {
+    font-size: 1.5em;
+}
+.form-group {
+    margin-top: -.5rem;
+}
+.form-group-radio-buttons .radio-button label {    
+    height: 1.5em;
+    line-height: 1.5em;   
+}
+footer span {   
+    padding-bottom: 0;
+   
+}
+}
+@media only screen and (max-width: 768px) {
+    footer span:last-of-type {
+        font-size: 1.5em;
+    }
+    .registration-form-builder {
+        margin-top: 0;
+    }
+    footer span {   
+        padding-bottom: 5px;
+       
+    }
+    .form-group {
+        margin-top: auto;
+    }
+}
+@media only screen and (max-width: 667px) {
+    .messages {
+        margin: 70vh auto 0;
+    }
+    .form-group-radio-buttons .radio-button label {
+      
+        height: 1.5em;
+        line-height: 1.5em;
+    }
+}
+@media only screen and (max-width: 568px) {
+    .messages {
+        margin: 75vh auto 0;
+    }
+    footer span:last-of-type {
+        font-size: 1.2em;
+    }
+    footer span {       
+        font-size: .7em;  
+    }
+    h1 {
+        font-size: 20px;
+    }
+    .form-group-radio-buttons .radio-button label {
+        height: 1.2em;
+        line-height: 1.2em;
+    }
+}
+@media only screen and (max-width: 425px) {
+   
+    .messages {
+        margin: 50vh auto 0;
+    }
+    h1 {
+        font-size: 28px;
+    }
+    h2 {
+        font-size: 20px;
+        margin-top: -22px;
+    }
+    p{
+        margin-top: -22px;
+    }
+    .btn {       
+        margin: 0;
+    }
+    header {      
+        padding: 5px 20px;
+       
+    }
+    .registration-form-builder {
+        margin-top: 1rem;
+    }
+    .form-group-radio-buttons .radio-button label {
+        height: 1.8em;
+        line-height: 1.8em;
+    }
+    footer span {
+        font-size: 1.7em;
+    }
+}
+
+
+@media only screen and (max-width: 320px) {
+    .messages {
+        margin: 60vh auto 0;
+    }
+    footer span:last-of-type {
+        font-size: 1.5em;
+    }
+    h1 {
+        font-size: 20px;
+    }
+   
+}
